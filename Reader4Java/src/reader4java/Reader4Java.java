@@ -4,16 +4,17 @@ package reader4java;
     import java.io.FileReader;
     import java.io.IOException;
     import java.util.Scanner;
-/**
- *
- * @author admin
- */
+    import java.io.File;
+   
 public class Reader4Java {
 
       public static void main(String[] args) throws FileNotFoundException, IOException {
 
-       BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\admin\\Documents\\GitHub\\Reader4Java\\Reader4Java\\src\\onegin.txt"));
-
+    //FrameWindow frame;
+    //frame = new FrameWindow("Text File operations");
+    //frame.setVisible(true);
+    String sa = new File("").getAbsolutePath();
+       BufferedReader reader = new BufferedReader(new FileReader(sa + "\\src\\onegin.txt"));
        StringBuilder sb = new StringBuilder();
        String line = null;
        while ( (line = reader.readLine()) != null) {
@@ -36,9 +37,8 @@ public class Reader4Java {
        }
 
        long te =System.nanoTime();
-
        System.out.println("Complete, lenght:" + buff.length() + " elapsed time:" + (te - ts)/1e6 + "ms");
-
+       
       }
 
       private static void waitEnter() {
