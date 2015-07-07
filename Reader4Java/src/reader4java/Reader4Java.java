@@ -10,11 +10,12 @@ public class Reader4Java {
 
       public static void main(String[] args) throws FileNotFoundException, IOException {
 
-    //FrameWindow frame;
-    //frame = new FrameWindow("Text File operations");
-    //frame.setVisible(true);
     String sa = new File("").getAbsolutePath();
        BufferedReader reader = new BufferedReader(new FileReader(sa + "\\src\\onegin.txt"));
+/*     import java.io.File;
+       import java.net.URL;  
+       URL resource = new MyTest().getClass().getResource("/");
+       System.out.println(resource.getFile()); */
        StringBuilder sb = new StringBuilder();
        String line = null;
        while ( (line = reader.readLine()) != null) {
