@@ -1,4 +1,3 @@
-
 package reader4java;
     import java.io.BufferedReader;
     import java.io.FileNotFoundException;
@@ -13,7 +12,7 @@ public class Reader4Java {
 
       public static void main(String[] args) throws FileNotFoundException, IOException {
 
-       BufferedReader reader = new BufferedReader(new FileReader("onegin.txt"));
+       BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\admin\\Documents\\GitHub\\Reader4Java\\Reader4Java\\src\\onegin.txt"));
 
        StringBuilder sb = new StringBuilder();
        String line = null;
