@@ -57,3 +57,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/Reader4Java/nbproject/private/
+/Reader4Java/build/
